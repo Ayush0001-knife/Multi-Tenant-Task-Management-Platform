@@ -47,6 +47,7 @@ const OrgRegister = () => {
       email,
       password: password1,
     };
+    console.log(orgRegisterData);
 
     try {
       const response = await axios.post(
@@ -67,10 +68,10 @@ const OrgRegister = () => {
       alert("Registration failed. Please try again.");
     }
 
-    nameElement.current.value = "";
-    emailElement.current.value = "";
-    password1Element.current.value = "";
-    password2Element.current.value = "";
+    // nameElement.current.value = "";
+    // emailElement.current.value = "";
+    // password1Element.current.value = "";
+    // password2Element.current.value = "";
   };
 
   return (

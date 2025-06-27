@@ -64,7 +64,7 @@ const StartPage = () => {
 
           <div className="flex-1 flex justify-center">
             <img
-              src="/SideImage.png" // ✅ Don't include `/public` in the path!
+              src="/SideImage.png"
               alt="Dashboard Preview"
               className="rounded-xl shadow-lg w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-md xl:max-w-sm"
             />

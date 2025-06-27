@@ -11,6 +11,8 @@ module.exports.registerOrganization = async (req, res, next) => {
 
   const { name, email, password } = req.body;
 
+  console.log(req.body);
+
   const existingOrg = await organizationModel.findOne({ email });
   if (existingOrg) {
     return res.status(400).json({ message: "Organization already exists" });
